@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chat</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="welcome_tips">
+        <item>Hello!</item>
+        <item>你好啊!</item>
+        <item>有来看我啦!</item>
+        <item>欢迎回来!</item>
+    </string-array>
+
+</resources>
