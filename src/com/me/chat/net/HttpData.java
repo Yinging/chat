@@ -10,7 +10,6 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
-
 import android.os.AsyncTask;
 
 public class HttpData extends AsyncTask<String, Void, String> {
@@ -51,6 +50,7 @@ public class HttpData extends AsyncTask<String, Void, String> {
 
 	@Override
 	protected void onPostExecute(String result) {
+		// 处理服务器发来gson的数据
 		listener.getDataUrl(result);
 		super.onPostExecute(result);
 	}

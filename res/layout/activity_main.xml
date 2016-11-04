@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/speek_background"
     android:orientation="vertical" >
 
     <ListView
@@ -21,16 +22,27 @@
 
         <EditText
             android:id="@+id/sendText"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
-        <Button
-            android:id="@+id/send_btn"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="发送" >
-        </Button>
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/send_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send" />
+
+            <Button
+                android:id="@+id/listen_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/speek" />
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
